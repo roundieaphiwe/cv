@@ -1,47 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-nav{
-    font-size: 3pc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-size: 10px;
-    background-color: blanchedalmond;
-    float: right;
-    margin-top: 28rem;
-    padding-right: 25rem;
-    border-radius: .5rem;
+body {
+  font-family: sans-serif;
+  background-color: #24273f;
+  color: #e4e4e4;
+}
+
+section {
+  height: 100vh;
+  padding: 5rem;
+}
+
+#home {
+  background-image: linear-gradient(to right bottom, #969ab4, #6f728ea7, #999bb1db),
+    url(https://hips.hearstapps.com/hmg-prod/images/beautiful-landscape-view-of-fuji-mountain-in-royalty-free-image-1623253648.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
+}
+
+#home img {
+    border-radius: 50%;
+    width: 25rem;
+    height: 30rem;
+}
+
+#home h1 {
+  font-size: 50px;
+}
+
+#home h1 span {
+    color: rgb(178, 206, 144);
+    font-size: 50px;
+}
 
 
+#PersonalInfo {
+margin-top: 10%;
 }
-img{
-    width: 35pc;
-    border-radius: 2rem;
-    padding-left: 20rem;
-}
-h1{
+
+
+
+/* styling about page */
+#about {
+  background-color: rgb(75, 138, 169);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  }
   
-    font-size: 3pc;
-    color:  rgba(0, 0, 0, 0.405);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-left: 10rem ;
-    padding-left: 5rem;
-    background-color: blanchedalmond;
-    border-radius: 70rem;
+  .splitScreen2{
+    margin-left: 55%;
+  }
 
-}
-h2{
-    font-size: 3pc;
-    color:  rgba(0, 0, 0, 0.405);
-    margin-bottom: 30rem;
+
+
+  #about .centered {
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-right: 25rem;
-    background-color: blanchedalmond;
-    border-radius: 5rem;
+  }
+
+
+
+
+
+
+#service {
+  background-color: rgb(178, 206, 144);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-h3{
-    font-size: 10pc;
-    color:  rgba(0, 0, 0, 0.405);
-    text-align: center;
-    margin-top: 20rem;
+
+#contact {
+  background-color: rgb(72, 120, 191);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b7b9c8ce;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #e4e4e4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover:not(.active) {
+  background-color: #24273f;
+  color: white;
+}
+
+.active {
+  background-color: #24273f;
+  color: white;
 }
