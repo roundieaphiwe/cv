@@ -6,13 +6,20 @@
 
 body {
   font-family: sans-serif;
-  background-color: #24273f;
+  background-color: #27193c;
   color: #e4e4e4;
 }
 
 section {
   height: 100vh;
   padding: 5rem;
+}
+
+section .header {
+  font-size: 2rem;
+  width: 100%;
+  background-color: #15041e;
+  padding: 0.5rem;
 }
 
 #home {
@@ -53,7 +60,7 @@ section {
   font-weight: bold;
 }
 
-#home .details {
+.details {
   width: 780px;
   display: flex;
   flex-direction: column;
@@ -63,12 +70,23 @@ section {
 }
 
 #contact {
-  background-color: #3c065c;
+  background-color: #302048;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  gap: 2rem;
+}
+
+#education {
+  background-color: #27193c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 2rem;
 }
 
 nav {
@@ -110,6 +128,22 @@ li a:hover:not(.active) {
   color: white;
 }
 
+footer {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
 @media (max-width: 800px) {
   section {
     height: auto;
@@ -125,7 +159,7 @@ li a:hover:not(.active) {
     margin-top: 3rem;
   }
 
-  #home .details {
+  .details {
     width: auto;
     display: flex;
     flex-direction: column;
